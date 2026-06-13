@@ -144,9 +144,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Phone</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Contact number will be provided
-                  </p>
+                  <div className="text-muted-foreground">
+                    +91 99804 44424
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -158,9 +158,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Email</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Email address will be provided
-                  </p>
+                  <div className="text-muted-foreground">
+                    silverhoof4@gmail.com
+                  </div>
                 </div>
               </CardContent>
             </Card>

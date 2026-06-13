@@ -2,7 +2,7 @@
 // Update VITE_WHATSAPP_NUMBER in your .env file with your full international number (no +, spaces, or dashes)
 // Example: VITE_WHATSAPP_NUMBER=919876543210 (India)
 
-const RAW_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER?.replace(/[^0-9]/g, "") || "0000000000"; // placeholder
+const RAW_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER?.replace(/[^0-9]/g, "") || "919980444424";
 
 /**
  * Build a WhatsApp deep link using wa.me format.

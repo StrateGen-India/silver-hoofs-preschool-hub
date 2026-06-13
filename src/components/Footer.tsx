@@ -70,11 +70,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <Phone className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
-                <span className="text-muted-foreground text-sm">Contact number will be provided</span>
+                <span className="text-muted-foreground text-sm">+91 99804 44424</span>
               </li>
-              <li className="flex items-start space-x-3">
+              <li className="flex items-start gap-3">
                 <Mail className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
-                <span className="text-muted-foreground text-sm">Email will be provided</span>
+                <span className="text-muted-foreground text-sm">silverhoof4@gmail.com</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Clock className="h-4 w-4 text-primary mt-1 flex-shrink-0" />

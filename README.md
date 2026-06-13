@@ -1,146 +1,34 @@
-# Welcome to your Lovable project
+# Silver Hoofs Pre-School Hub
 
-## Project info
+Welcome to the Silver Hoofs Pre-School Hub repository. This project serves as the main web portal for Silver Hoofs Pre-School, offering a user-friendly and modern interface for prospective parents and visitors.
 
-**URL**: https://lovable.dev/projects/73039180-bae0-4342-a305-cb225e004f15
+## Quick Start
 
-## Local Development (Windows / macOS / Linux)
-
-Prerequisites:
-
+### Prerequisites
 - Node.js 18+ (recommend latest LTS) and npm 9+
 - Git
 
-Optional: Bun is not required. This project will run perfectly with plain npm.
+### Installation
 
-Quick start:
-
-```powershell
-# Clone the repository
-git clone <YOUR_GIT_URL>
-cd <YOUR_PROJECT_NAME>
-
+```bash
 # Install dependencies
 npm install
 
-# Start the dev server (port 8080)
+# Start the dev server
 npm run dev
+```
 
-# Or equivalently
-npm start
+### Building for Production
 
-# Build for production (output goes to ./dist)
+```bash
+# Build the application
 npm run build
 
-# Preview the production build locally
+# Preview the production build
 npm run preview
 ```
 
-Dev server will be available at: http://localhost:8080/
-
-If you need to change the port, edit `server.port` in `vite.config.ts` or run:
-
-```powershell
-npm run dev -- --port 3000
-```
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/73039180-bae0-4342-a305-cb225e004f15) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-The steps above already cover cloning and running. Use any IDE (VS Code recommended). ESLint and TypeScript will guide you as you code:
-
-```powershell
-# Lint the project
-npm run lint
-
-# Type check (implicit during build, or run tsc directly)
-npx tsc --noEmit
-```
-
-### Common Issues
-
-- Port already in use: run `npm run dev -- --port 5173` (or any free port) or stop the other process.
-- Large bundle warning: consider code splitting (dynamic `import()`); see Vite build output suggestions.
-- Fast refresh warnings: These are non-blocking and relate to exporting non-component values in UI files; safe to ignore.
-- WhatsApp buttons not opening: Ensure you created a `.env` file with `VITE_WHATSAPP_NUMBER` (digits only, international format). Example: `VITE_WHATSAPP_NUMBER=919876543210`
-
-### SEO: Sitemap & Robots
-
-This project ships a sitemap and robots.txt to help Google index your SPA routes.
-
-- During development, a default sitemap is available at `/sitemap.xml` (points to `http://localhost:8080`).
-- On production build, a sitemap is generated automatically using the `SITE_URL` (or `VITE_SITE_URL`) environment variable.
-
-Set your site URL and build:
-
-```powershell
-$env:SITE_URL = "https://your-domain.com"
-npm run build
-```
-
-Artifacts:
-
-- `dist/sitemap.xml` — Generated from known routes
-- `public/robots.txt` — References `/sitemap.xml`
-
-If hosting under a subpath (e.g., GitHub Pages), set `SITE_URL` accordingly, e.g. `https://user.github.io/repo`.
-
-### WhatsApp Chat Integration
-
-You can trigger direct WhatsApp chats from CTA buttons. Configure your number:
-
-```powershell
-Copy .env.example .env
-# Edit .env and add your number
-notepad .env
-```
-
-Component: `src/components/WhatsAppButton.tsx`
-
-Usage example:
-
-```tsx
-<WhatsAppButton message="Hi! I'd like to know more about admissions." />
-```
-
-Environment variable: `VITE_WHATSAPP_NUMBER` (must be digits only, no + or spaces). The component falls back to a placeholder if missing.
-
-### Production Build & Deploy
-
-After `npm run build`, deploy the contents of `dist/` to any static host (Netlify, Vercel, GitHub Pages, S3 + CloudFront, etc.).
-
----
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
+## Technologies Used
 
 - Vite
 - TypeScript
@@ -148,14 +36,12 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Environment Variables
 
-Simply open [Lovable](https://lovable.dev/projects/73039180-bae0-4342-a305-cb225e004f15) and click on Share -> Publish.
+For WhatsApp integration to work properly, create a `.env` file from `.env.example`:
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+cp .env.example .env
+```
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+And configure `VITE_WHATSAPP_NUMBER` with your full international phone number (digits only). Example: `VITE_WHATSAPP_NUMBER=919980444424`.
